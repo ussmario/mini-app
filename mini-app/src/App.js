@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import react from 'react';
 import './App.css';
+const url = 'https://swapi.dev/api/'
 
-function App() {
+// fetch(url)
+// .then(returns => returns.json())
+// .then(({name, id}) => ({name, id}))
+// .then(data => console.log(data));
+
+export default class App extends React {
+  constructor () {
+    super ();
+    this.state = {
+
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
+
+//Component?:
+    //selectPersonPLaceOrThing(){
+    //this.setState changes the state when the thing is selected, {selectedThing: / newstatus /}
+    //async componentDidMount() {}
+    //render() {}
+    }
   );
 }
-
-export default App;
