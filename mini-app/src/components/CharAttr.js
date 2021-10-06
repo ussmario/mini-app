@@ -2,18 +2,21 @@ export default function CharAttr({ peeps, userInput }) {
 
 
   let char = peeps.find((element) => element.name === userInput)
-  console.log(char);
   let attr = [];
-  for (let i in char){
-    attr.push(i);
+  for(let i in char){
+    attr.push(`${i} : ${char[i]}`);
+  }
+  let filteredAttrs = [];
+  for (let j =0; j < 8; j++){
+    filteredAttrs.push(attr[j]);
   }
 
   return (
     <div className="attr-list">
       <ul>
-        {props.people.map(person => (
-          <li>
-            <Person key={person.id} name={person.name} /> <button onClick={() => props.removeFavoriteComedian(person.id)}>DELETE</button>
+        {filteredAttrs.map((element, index) => (
+          <li key={index}>
+            {element}
           </li>
         ))}
       </ul>

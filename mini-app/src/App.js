@@ -21,18 +21,18 @@ export default class App extends Component {
     const display = document.getElementById('displayChar');
     if (input) {
       input.addEventListener('change', (e) => {
-        let thisIsWhatWeWant = e.target.value;
-        display.textContent = thisIsWhatWeWant;
-        this.setState({ userInput: thisIsWhatWeWant });
+        let searchedChar = e.target.value;
+        display.textContent = searchedChar;
+        this.setState({ userInput: searchedChar });
       });
     }
 
     return (
       <div className="App">
         <form>
-          <label for="inputName">Search for a Character:</label>
+          <label htmlFor="inputName">Search for a Character:</label>
           <input type="text" placeholder="Enter a Characters Name" name="inputName" />
-          <p id="displayChar"></p>
+          <h2 id="displayChar"></h2>
           <CharAttr peeps={this.state.myPeople} userInput={this.state.userInput} />
           <button type="button">Search</button>
         </form>

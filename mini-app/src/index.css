@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+    /* <style>
+    body {
+        background-image: url('https://coolwallpapers.me/1318082-star-wars.html');
+        background-repeat: no-repeat;
+  }
+  </style> */
+
 }
 
 code {
