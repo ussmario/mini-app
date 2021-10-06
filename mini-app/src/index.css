@@ -5,13 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-    /* <style>
-    body {
-        background-image: url('https://coolwallpapers.me/1318082-star-wars.html');
-        background-repeat: no-repeat;
-  }
-  </style> */
+  background-image: url('http://cdn.wallpapername.com/1920x1080/20121102/star%20wars%20stormtroopers%20darth%20maul%20lightsabers%20luke%20skywalker%20the%20simpsons%20white%20background%201920x_www.wallpapername.com_6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  font-size: 18px;
 
 }
 
