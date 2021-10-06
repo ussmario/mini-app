@@ -6,7 +6,7 @@ export default function CharAttr({ input }) {
   }
   let filteredAttrs = [];
   if (attr !== []) {
-    for (let j = 0; j < 8; j++) {
+    for (let j = 0; j < 9; j++) {
       filteredAttrs.push(attr[j]);
     }
   }
